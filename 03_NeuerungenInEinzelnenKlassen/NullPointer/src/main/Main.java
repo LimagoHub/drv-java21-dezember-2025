@@ -12,5 +12,5 @@ class Kontakte {
 }
 
 class Person {
-    Kontakte kontakte;
+    Kontakte kontakte = new Kontakte();
 }

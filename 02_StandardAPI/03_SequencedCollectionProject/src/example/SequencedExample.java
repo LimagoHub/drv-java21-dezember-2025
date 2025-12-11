@@ -27,6 +27,14 @@ public class SequencedExample {
         SequencedCollection<String> seqList =
                 new ArrayList<>(List.of("A", "B", "C"));
 
+        SequencedCollection<String> copy = seqList.reversed();
+
+        System.out.println("Copy ArrayList:     " + copy);
+
+        copy.addFirst("X");
+
+        System.out.println("Copy ArrayList:     " + copy);
+
         System.out.println("Original SequencedList: " + seqList);
 
         // letztes Element löschen (Java 21: removeLast())

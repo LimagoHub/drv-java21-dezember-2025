@@ -3,6 +3,7 @@ package main;
 public class DontDoIt {
 
     /*
+
     public static void main(String[] args) {
         for (int i = 0; i < 50_000; i++) {
             new Thread(() -> {
@@ -14,9 +15,9 @@ public class DontDoIt {
         }
 
     }
+*/
 
 
-     */
     public static void main(String[] args) throws Exception {
 
         for (int i = 0; i < 50_000; i++) {

@@ -7,7 +7,8 @@ public class PinningExample {
     static final Object LOCK_OBJECT = new Object();
     static final ReentrantLock LOCK = new ReentrantLock();
 
-    /*public static void main(String[] args) throws Exception {
+    /*
+    public static void main(String[] args) throws Exception {
 
         for (int i = 0; i < 3; i++) {
             int id = i;
@@ -24,7 +25,9 @@ public class PinningExample {
 
         Thread.sleep(7000);
     }
-*/
+    */
+
+    /*
     public static void main(String[] args) throws Exception {
 
         for (int i = 0; i < 3; i++) {
@@ -43,5 +46,14 @@ public class PinningExample {
         }
 
         Thread.sleep(7000);
+    }
+
+*/
+    public static void main(String[] args) throws Exception {
+        synchronized (LOCK_OBJECT) {
+            // Do something with LockObject
+
+        }
+        Thread.sleep(1000);
     }
 }
